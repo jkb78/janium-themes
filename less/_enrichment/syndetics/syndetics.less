@@ -1,11 +1,11 @@
 .syn_title {
-  padding: 5px; 
-  background-color: @well-bg; 
+  padding: 5px;
+  background-color: @well-bg;
   border: 1px solid @well-border;
-  text-align: center; 
+  text-align: center;
   color: inherit;
   font-weight: bold;
-} 
+}
 
 .syn_body {
   padding: 5px;
@@ -15,14 +15,14 @@
 .syn_body a:link,
 .syn_body a:visited,
 .syn_body a:active {
-  font-weight: bold; 
-  color: @link-color; 
+  font-weight: bold;
+  color: @link-color;
   text-decoration: none
 }
 
 .syn_body a:hover {
-  font-weight: bold; 
-  color: @link-hover-color; 
+  font-weight: bold;
+  color: @link-hover-color;
   text-decoration: underline;
 }
 
@@ -36,13 +36,13 @@
 
 .syn_list ul {
   list-style: none;
-  padding: 0px 0px 5px 5px;
+  padding: 0 5px 5px;
 }
 
 .syn_list_item {
   clear:both;
   position:relative;
-  padding: 5px 0px;
+  padding: 5px 0;
 }
 
 .syn_toc_item_title {
@@ -73,7 +73,7 @@
 
 /* Title profile */
 .syn_fp {
-  padding: 5px 0px;
+  padding: 5px 0;
 }
 .syn_fp_title {
   font-weight: bold;
@@ -82,13 +82,13 @@
 
 .syn_fp_character,
 .syn_fp_biographee {
-  padding: 10px 0px 5px 10px;
+  padding: 10px 0 5px 10px;
 }
-.syn_fp_character span.syn_fp_tag_seperator, 
+.syn_fp_character span.syn_fp_tag_seperator,
 .syn_fp_biographee span.syn_fp_tag_seperator {
   display:inline;
 }
-.syn_fp_characters span.syn_fp_tag 
+.syn_fp_characters span.syn_fp_tag
 .syn_fp_biographees span.syn_fp_tag {
   display:inline;
   padding-left: 2px;
@@ -99,7 +99,7 @@ span.syn_fp_tag_title {
 
 /* Video Profile */
 .syn_av {
-  padding: 5px 0px;
+  padding: 5px 0;
 }
 .syn_av_title {
   font-weight: bold;
@@ -117,7 +117,7 @@ span.syn_av_tag_title {
   border:2px solid @gray-darker;
 }
 #syn_lb .syn_title {
-  background-color: @well-bg; 
+  background-color: @well-bg;
   border: 1px solid @well-border;
   color: inherit;
   text-align:left;
@@ -139,13 +139,13 @@ span.syn_av_tag_title {
 #syn_lb_right a:link,
 #syn_lb_right a:visited,
 #syn_lb_right a:active {
-  font-weight: bold; 
-  color: @link-color; 
+  font-weight: bold;
+  color: @link-color;
   text-decoration: none
 }
 #syn_lb_right a:hover {
-  font-weight: bold; 
-  color: @link-hover-color; 
+  font-weight: bold;
+  color: @link-hover-color;
   text-decoration: underline;
 }
 .syn_lb_search_tag {
@@ -165,7 +165,7 @@ span.syn_av_tag_title {
 
 /* Game profile */
 .syn_gp {
-  padding: 5px 0px;
+  padding: 5px 0;
 }
 .syn_gp_title {
   font-weight: bold;
@@ -173,18 +173,18 @@ span.syn_av_tag_title {
 }
 
 .syn_gp_stitle {
-  padding: 5px; 
-  background-color: @well-bg; 
-  border: 1px solid @well-border; 
-  text-align: left; 
-  color: inherit; 
+  padding: 5px;
+  background-color: @well-bg;
+  border: 1px solid @well-border;
+  text-align: left;
+  color: inherit;
   font-weight: bold;
-} 
+}
 
 span.syn_gp_tag_seperator {
   display:inline;
 }
-.syn_gp_header span.syn_gp_tag 
+.syn_gp_header span.syn_gp_tag
 .syn_gp_main span.syn_gp_tag {
   display:inline;
   padding-left: 2px;
@@ -194,11 +194,11 @@ span.syn_gp_tag_title {
 }
 
 .syn_gp_screens {
-  display: inline-block; 
-  border: 1px;  
-  padding: 4px; 
-  zoom: 1; 
-  *display: inline;
+  display: inline-block;
+  border: 1px;
+  padding: 4px;
+  zoom: 1;
+  //*display: inline;
 }
 
 .syn_gp_similar_games {
@@ -206,40 +206,41 @@ span.syn_gp_tag_title {
 }
 
 .syn_gp_list_left {
- border: 0px;
- margin: 0px 5px 5px 0px;
- padding: 0px;
+ border: 0;
+ margin: 0 5px 5px 0;
+ padding: 0;
  width: 125px;
  float: left;
 }
 
 .syn_gp_list_right {
  float: left;
- border: 0px
- margin: 0px 0px 5px 0px;
- padding: 0px;
+ border: 0;
+ //margin: 0 5px 0;
+ padding: 0;
  width: 420px;
- display: inline;
+ //display: inline;
 }
 
 .syn_similar_list {
-  display: inline-block; 
-  border: 1px;  
-  padding: 4px; 
-  zoom: 1; 
-  *display: inline;
+  display: inline-block;
+  border: 1px;
+  padding: 4px;
+  zoom: 1;
   vertical-align:top;
 }
 
 .syn_similar_title {
   font-size: 80%;
-  font-weight: bold; 
-  display:block;width:150px;
+  font-weight: bold;
+  display:block;
+  width:150px;
 }
 
 .syn_similar_author {
   font-size: 72%;
-  display:inline;width:100px;
+  display:inline;
+  //width:100px;
 }
 
 .syn_similar_image {

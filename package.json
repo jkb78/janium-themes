@@ -1,7 +1,7 @@
 {
   "name": "JBootstrap",
-  "version": "0.0.0",
-  "description": "Theme customizer for products Janium",
+  "version": "0.1.0",
+  "description": "Builder themes for Janium products",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,8 +13,11 @@
   "keywords": [
     "Janium",
     "Theme",
-    "Customizer",
-    "Gulp"
+    "Builder",
+    "Gulp",
+    "CSS",
+    "LESS",
+    "Bootstrap"
   ],
   "author": "Juan Carlos Ruiz",
   "license": "MIT",
@@ -22,9 +25,11 @@
     "url": "https://github.com/jkb78/jbootstrap/issues"
   },
   "homepage": "https://github.com/jkb78/jbootstrap",
-  "devDependencies": {
+  "dependencies": {
     "gulp": "^3.8.10",
-    "gulp-concat": "^2.4.1",
+    "gulp-autoprefixer": "^2.0.0",
+    "gulp-csscomb": "^3.0.3",
+    "gulp-csslint": "^0.1.5",
     "gulp-less": "^1.3.6",
     "gulp-minify-css": "^0.3.11",
     "gulp-rename": "^1.2.0"
