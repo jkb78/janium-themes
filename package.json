@@ -1,5 +1,5 @@
 {
-  "name": "JBootstrap",
+  "name": "Janium Themes",
   "version": "0.1.0",
   "description": "Builder themes for Janium products",
   "main": "gulpfile.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jkb78/jbootstrap.git"
+    "url": "https://github.com/jkb78/janium-themes.git"
   },
   "keywords": [
     "Janium",
@@ -22,9 +22,9 @@
   "author": "Juan Carlos Ruiz",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jkb78/jbootstrap/issues"
+    "url": "https://github.com/jkb78/janium-themes/issues"
   },
-  "homepage": "https://github.com/jkb78/jbootstrap",
+  "homepage": "https://github.com/jkb78/janium-themes",
   "dependencies": {
     "gulp": "^3.8.10",
     "gulp-autoprefixer": "^2.0.0",
