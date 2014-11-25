@@ -1,4 +1,4 @@
 JBootstrap
 ==========
 
-Theme customizer for products Janium
+Builder themes for Janium products
