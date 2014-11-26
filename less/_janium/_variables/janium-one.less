@@ -4,7 +4,7 @@
 
 //== Colors
 @gray:                   #6f6f6f;
-@gray-light:             lighten(#000, 60%);   // #999
+@gray-light:             lighten(@gray-base, 60%);   // #999
 
 @brand-primary:         #008cba;
 @brand-success:         #43ac6a;
@@ -69,6 +69,11 @@
 @navbar-inverse-toggle-hover-bg:            transparent;
 @navbar-inverse-toggle-border-color:        transparent;
 
+//== Tabs
+@nav-tabs-border-color:                     @table-border-color;
+@nav-tabs-active-link-hover-border-color:   @table-border-color;
+@nav-tabs-justified-link-border-color:      @table-border-color;
+
 //== Pager
 @pager-border-radius:                  3px;
 
@@ -123,7 +128,13 @@
 @alert-danger-bg:             @brand-danger;
 @alert-danger-text:           #fff;
 
+//== List group
+@list-group-border:             @table-border-color;
+
 //== Panels
+@panel-inner-border:          @table-border-color;
+@panel-default-border:        @table-border-color;
+
 @panel-success-text:          #fff;
 @panel-success-heading-bg:    @brand-success;
 
@@ -135,6 +146,9 @@
 
 @panel-danger-text:           #fff;
 @panel-danger-heading-bg:     @brand-danger;
+
+//== Thumbnails
+@thumbnail-border:            @table-border-color;
 
 //== Wells
 @well-bg:                     @jumbotron-bg;
@@ -155,10 +169,10 @@
 @blockquote-small-color:      @gray;
 
 //** Blockquote border color
-@blockquote-border-color:     @hr-border;
+@blockquote-border-color:     @table-border-color;
 
 //** Page header border color
-@page-header-border-color:    @hr-border;
+@page-header-border-color:    @table-border-color;
 
 //** Horizontal line color.
-@hr-border:                   #ddd;
+@hr-border:                   @table-border-color;
