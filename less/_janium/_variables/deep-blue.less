@@ -26,14 +26,14 @@
 @table-cell-padding:            6px;
 @table-condensed-cell-padding:  3px;
 
-@table-bg-accent:               @well-bg;
-@table-bg-hover:                darken(@well-bg, 3%);
+@table-bg-accent:               @gray-light;
+@table-bg-hover:                darken(@gray-light, 3%);
 
-@table-border-color:            @navbar-default-bg;
+@table-border-color:            @gray-light;
 
 //== Buttons
 @btn-default-color:              #fff;
-@btn-default-bg:                 @navbar-default-bg;
+@btn-default-bg:                 @gray-light;
 //@btn-default-border:             transparent;
 //
 //@btn-primary-border:             transparent;
@@ -54,20 +54,20 @@
 @input-color-placeholder:        #ccc;
 
 @legend-color:                   @text-color;
-@legend-border-color:            @table-border-color;
+@legend-border-color:            @gray-light;
 
 @input-group-addon-bg:           @btn-default-bg;
 @input-group-addon-border-color: transparent;
 
 //== Dropdowns
-@dropdown-bg:                    @well-bg;
+@dropdown-bg:                    @gray-light;
 @dropdown-border:                transparent;
 @dropdown-fallback-border:       transparent;
 @dropdown-divider-bg:            @body-bg;
 
 @dropdown-link-color:            @text-color;
 @dropdown-link-hover-color:      @text-color;
-@dropdown-link-hover-bg:         @navbar-default-link-hover-bg;
+@dropdown-link-hover-bg:         darken(@gray-light, 3%);
 
 @dropdown-link-disabled-color:   @body-bg;
 
@@ -82,9 +82,9 @@
 // Navbar links
 @navbar-default-link-color:                @text-color;
 @navbar-default-link-hover-color:          @navbar-default-link-color;
-@navbar-default-link-hover-bg:             darken(@navbar-default-bg, 3%);
+@navbar-default-link-hover-bg:             @dropdown-link-hover-bg;
 @navbar-default-link-active-color:         @navbar-default-link-color;
-@navbar-default-link-active-bg:            darken(@navbar-default-bg, 3%);
+@navbar-default-link-active-bg:            @dropdown-link-hover-bg;
 
 // Navbar brand label
 @navbar-default-brand-hover-color:         @navbar-default-link-color;
@@ -104,9 +104,9 @@
 // Inverted navbar links
 @navbar-inverse-link-color:                 @text-color;
 @navbar-inverse-link-hover-color:           @navbar-default-link-color;
-@navbar-inverse-link-hover-bg:              darken(@navbar-default-bg, 3%);
+@navbar-inverse-link-hover-bg:              @dropdown-link-hover-bg;
 @navbar-inverse-link-active-color:          @navbar-default-link-color;
-@navbar-inverse-link-active-bg:             darken(@navbar-default-bg, 3%);
+@navbar-inverse-link-active-bg:             @dropdown-link-hover-bg;
 @navbar-inverse-link-disabled-color:        #ccc;
 
 // Inverted navbar brand label
@@ -120,28 +120,26 @@
 
 
 //== Navs
-@nav-link-hover-bg:                         @well-bg;
+@nav-link-hover-bg:                         @gray-light;
 
-@nav-disabled-link-color:                   @well-bg;
-@nav-disabled-link-hover-color:             @well-bg;
-
-@nav-open-link-hover-color:                 @text-color;
+@nav-disabled-link-color:                   @gray-light;
+@nav-disabled-link-hover-color:             @gray-light;
 
 //== Tabs
 @nav-tabs-border-color:                     transparent;
 
-@nav-tabs-link-hover-border-color:          @table-border-color;
+@nav-tabs-link-hover-border-color:          @gray-light;
 
 @nav-tabs-active-link-hover-color:          @text-color;
-@nav-tabs-active-link-hover-border-color:   @table-border-color;
+@nav-tabs-active-link-hover-border-color:   @gray-light;
 
-@nav-tabs-justified-link-border-color:            @table-border-color;
-@nav-tabs-justified-active-link-border-color:     @table-border-color;
+@nav-tabs-justified-link-border-color:            @gray-light;
+@nav-tabs-justified-active-link-border-color:     @gray-light;
 
 //== Pagination
 
 @pagination-color:                     @text-color;
-@pagination-bg:                        @well-bg;
+@pagination-bg:                        @gray-light;
 @pagination-border:                    transparent;
 
 @pagination-hover-color:               @text-color;
@@ -152,11 +150,11 @@
 @pagination-active-border:             transparent;
 
 @pagination-disabled-color:            darken(@table-bg-hover, 10%);
-@pagination-disabled-bg:               @well-bg;
+@pagination-disabled-bg:               @gray-light;
 @pagination-disabled-border:           transparent;
 
 //== Jumbotron
-@jumbotron-bg:                   @well-bg;
+@jumbotron-bg:                   @gray-light;
 @jumbotron-heading-color:        inherit;
 
 //== Form states and alerts
@@ -177,13 +175,13 @@
 @state-danger-border:            transparent;
 
 //== Popovers
-@popover-bg:                          @well-bg;
+@popover-bg:                          @gray-light;
 @popover-border-color:                transparent;
 @popover-fallback-border-color:       transparent;
 
 @popover-title-bg:                    @table-bg-hover;
 
-@popover-arrow-color:                 @well-bg;
+@popover-arrow-color:                 @popover-bg;
 
 @popover-arrow-outer-color:           transparent;
 @popover-arrow-outer-fallback-color:  transparent;
@@ -191,17 +189,17 @@
 //== Modals
 @modal-inner-padding:         20px;
 
-@modal-content-bg:                             @well-bg;
+@modal-content-bg:                             @gray-light;
 @modal-content-border-color:                   transparent;
 @modal-content-fallback-border-color:          transparent;
 
 @modal-header-border-color:   @body-bg;
 
 //== Progress bars
-@progress-bg:                 @well-bg;
+@progress-bg:                 @gray-light;
 
 //== List group
-@list-group-bg:                 @well-bg;
+@list-group-bg:                 @gray-light;
 @list-group-border:             transparent;
 
 @list-group-hover-bg:           @table-bg-hover;
@@ -210,7 +208,7 @@
 @list-group-link-heading-color: @text-color;
 
 //== Panels
-@panel-bg:                    @well-bg;
+@panel-bg:                    @gray-light;
 
 @panel-inner-border:          transparent;
 @panel-footer-bg:             @table-bg-hover;
@@ -228,7 +226,7 @@
 @panel-danger-border:         transparent;
 
 //== Wells
-@well-bg:                     @table-border-color;
+@well-bg:                     @gray-light;
 @well-border:                 transparent;
 
 //== Badges
@@ -237,7 +235,7 @@
 
 
 //== Breadcrumbs
-@breadcrumb-bg:                 @well-bg;
+@breadcrumb-bg:                 @gray-light;
 @breadcrumb-color:              @text-color;
 @breadcrumb-active-color:       @text-color;
 
@@ -250,14 +248,14 @@
 //** Horizontal offset for forms and lists.
 @component-offset-horizontal: 180px;
 //** Text muted color
-@text-muted:                  @table-border-color;
+@text-muted:                  @gray-light;
 //** Abbreviations and acronyms border color
-@abbr-border-color:           @table-border-color;
+@abbr-border-color:           @gray-light;
 //** Headings small color
 @headings-small-color:        @text-color;
 //** Blockquote small color
 @blockquote-small-color:      @text-color;
 //** Blockquote border color
-@blockquote-border-color:     @table-border-color;
+@blockquote-border-color:     @gray-light;
 //** Horizontal line color.
-@hr-border:                   @table-border-color;
+@hr-border:                   @gray-light;

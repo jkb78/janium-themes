@@ -8,6 +8,7 @@ var csslint = require('gulp-csslint');
 var csscomb = require('gulp-csscomb');
 var minify  = require('gulp-minify-css');
 var rename  = require('gulp-rename');
+var del = require('del');
 var autoprefixer = require('gulp-autoprefixer');
 
 // --- TASK
@@ -39,24 +40,34 @@ gulp.task('build-less', function () {
     // Create CSS file
     .pipe(gulp.dest('./dist/css'))
 
+    // Add .min to name file
+    .pipe(rename({suffix: '.min'}))
+
     // Minify CSS file
     .pipe(minify({
       compatibility: 'ie8',
       noAdvanced: true
     }))
 
-    // Add min to name file
-    .pipe(rename({suffix: '.min'}))
-
     // Create minified file
     .pipe(gulp.dest('./dist/css'));
 
+});
+
+gulp.task('clean', function(cb) {
+  // Clean destination folder
+  del(['dist/css'], cb)
 });
 
 // --- WATCH
 
 
 // --- DEFAULT
-gulp.task('default', ['build-less'], function() {
-  console.log('Tareas finalizadas ...');
+//gulp.task('default', ['build-less'], function() {
+//  console.log('Tareas finalizadas ...');
+//});
+
+
+gulp.task('default', ['clean'], function() {
+  gulp.start('build-less');
 });
